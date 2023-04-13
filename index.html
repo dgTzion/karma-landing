@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Karma - Autodom.in</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div role="button">
+      <span class="glow"></span>
+      <div><span>karma</span>Autodomin</div>
+    </div>
+
+    <script>
+      if (typeof window.CSS.registerProperty === "function") {
+        document.body.style.setProperty("--supported", 1);
+        document.body.classList.add("registerProperty-supported");
+      } else {
+        document.body.style.setProperty("--not-supported", 1);
+        document.body.classList.add("registerProperty-not-supported");
+      }
+    </script>
+  </body>
+</html>
